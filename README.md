@@ -1,4 +1,4 @@
-# Roselyne & Fred Wedding Website
+Rose and Fred Wedding Website – December 12, 2026
 
 This is a mobile-friendly first design draft for the wedding website.
 
