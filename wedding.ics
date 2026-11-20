@@ -1,0 +1,13 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Roselyne and Fred//Wedding//EN
+BEGIN:VEVENT
+UID:roselyne-fred-wedding-20261212@example.invalid
+DTSTAMP:20261120T052100Z
+DTSTART:20261212T070000Z
+DTEND:20261212T100000Z
+SUMMARY:Roselyne & Fred Wedding
+LOCATION:Deliverance Church International Umoja, Nairobi, Kenya
+DESCRIPTION:Wedding ceremony at 10:00 AM East Africa Time.
+END:VEVENT
+END:VCALENDAR
