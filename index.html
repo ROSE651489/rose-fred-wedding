@@ -69,11 +69,32 @@
 
     </section>
 
-    <section class="guestbook section" id="guestbook">
-      <p class="eyebrow">A NOTE FOR THE COUPLE</p><h2>Leave us a blessing</h2>
-      <p>Share a prayer, Bible verse, piece of advice or a heartfelt message for Roselyne and Fred.</p>
-      <div class="notice">Guestbook publishing and message storage will be connected before launch.</div>
-    </section>
+   <section class="guestbook section" id="guestbook">
+  <p class="eyebrow">A NOTE FOR THE COUPLE</p>
+  <h2>Leave us a blessing</h2>
+  <p>Share a prayer, Bible verse, piece of advice or a heartfelt message for Roselyne and Fred.</p>
+
+  <form id="guestbookForm">
+    <input type="text" id="guestName" placeholder="Your name" required>
+
+    <select id="guestRelationship" required>
+      <option value="">How do you know the couple?</option>
+      <option value="Family">Family</option>
+      <option value="Friend">Friend</option>
+      <option value="Colleague">Colleague</option>
+      <option value="Church family">Church family</option>
+      <option value="Other">Other</option>
+    </select>
+
+    <textarea id="guestMessage" placeholder="Write your blessing or message..." required></textarea>
+
+    <button type="submit">Leave your blessing</button>
+  </form>
+
+  <p id="guestbookStatus"></p>
+
+  <div id="guestbookMessages"></div>
+</section>
 
     <section class="wall section" id="wall">
       <p class="eyebrow">THE DAY THROUGH YOUR EYES</p><h2>Make our wall beautiful</h2>
