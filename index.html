@@ -98,11 +98,35 @@
 </div>
 </section>
 
-    <section class="wall section" id="wall">
-      <p class="eyebrow">THE DAY THROUGH YOUR EYES</p><h2>Make our wall beautiful</h2>
-      <p>We can't wait to see the moments you capture. Guest photo and video uploads will be enabled here after secure storage is connected.</p>
-      <div class="notice">Wedding wall upload setup pending.</div>
-    </section>
+    
+<section class="wall section" id="wall">
+  <p class="eyebrow">THE DAY THROUGH YOUR EYES</p>
+  <h2>Make Our Wall Beautiful</h2>
+  <p>Pin your photos and leave us a note. Every memory makes our day more special.</p>
+
+  <form id="wallForm" class="wall-form">
+    <label for="wallGuestName">Your name</label>
+    <input type="text" id="wallGuestName" placeholder="Enter your name" maxlength="80" required>
+
+    <label for="wallRelationship">How do you know us?</label>
+    <input type="text" id="wallRelationship" placeholder="Friend, family, colleague...">
+
+    <label for="wallPhotos">Pin your photos</label>
+    <input type="file" id="wallPhotos" accept="image/*" multiple>
+
+    <label for="wallMessage">Write us a sticky note</label>
+    <textarea id="wallMessage" maxlength="150" placeholder="Leave us a blessing or a special message..." rows="4"></textarea>
+    <small><span id="wallCharCount">0</span>/150</small>
+
+    <button type="submit">Share Your Memories ❤️</button>
+    <p id="wallStatus" aria-live="polite"></p>
+  </form>
+
+  <div id="memoryWall" class="memory-wall">
+    <p>Our beautiful memories will appear here...</p>
+  </div>
+</section>
+
 
   <section class="gallery section" id="gallery">
   <p class="eyebrow">OUR FAVOURITE MOMENTS</p>
