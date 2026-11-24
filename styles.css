@@ -83,3 +83,183 @@
   opacity: 0.7;
 }
 }
+
+
+/* =====================================
+   ROSELYNE & FRED WEDDING MEMORY WALL
+===================================== */
+
+.wall {
+  text-align: center;
+}
+
+.wall-form {
+  max-width: 650px;
+  margin: 35px auto;
+  padding: 30px;
+  background: #fffaf7;
+  border-radius: 18px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.wall-form label {
+  display: block;
+  margin: 18px 0 8px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #594b48;
+}
+
+.wall-form input,
+.wall-form textarea {
+  width: 100%;
+  padding: 13px;
+  border: 1px solid #e7dcd6;
+  border-radius: 9px;
+  background: #fff;
+  font: inherit;
+  box-sizing: border-box;
+}
+
+.wall-form input[type="file"] {
+  padding: 12px;
+}
+
+.wall-form textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.wall-form small {
+  display: block;
+  text-align: right;
+  color: #8b7770;
+  margin-top: 5px;
+}
+
+.wall-form button {
+  display: block;
+  width: 100%;
+  margin-top: 22px;
+  padding: 15px;
+  border: none;
+  border-radius: 30px;
+  background: #6d4945;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.wall-form button:hover {
+  opacity: 0.85;
+}
+
+.wall-form button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+#wallStatus {
+  text-align: center;
+  margin-top: 15px;
+  color: #6d4945;
+}
+
+.memory-wall {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  margin-top: 45px;
+  align-items: start;
+}
+
+.memory-card {
+  padding: 14px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.09);
+  transform: rotate(-1deg);
+  transition: transform 0.25s ease;
+  overflow-wrap: anywhere;
+}
+
+.memory-card:nth-child(even) {
+  transform: rotate(1.5deg);
+}
+
+.memory-card:hover {
+  transform: rotate(0deg) translateY(-5px);
+}
+
+.memory-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 12px;
+}
+
+.memory-card h4 {
+  margin: 12px 0 4px;
+  color: #594b48;
+}
+
+.memory-card small {
+  color: #917f78;
+}
+
+.memory-card .sticky-note {
+  padding: 20px;
+  margin: 12px 0;
+  background: #fff2b8;
+  border-radius: 4px;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.08);
+  text-align: left;
+  min-height: 85px;
+  transform: rotate(-1deg);
+}
+
+.memory-card:nth-child(3n) .sticky-note {
+  background: #f9dfe5;
+}
+
+.memory-card:nth-child(4n) .sticky-note {
+  background: #dff0e6;
+}
+
+.memory-card:nth-child(5n) .sticky-note {
+  background: #e7e1f7;
+}
+
+.memory-card .sticky-note p {
+  margin: 0;
+  line-height: 1.6;
+  color: #514542;
+}
+
+@media (max-width: 600px) {
+  .wall-form {
+    padding: 20px;
+    margin: 25px auto;
+  }
+
+  .memory-wall {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .memory-card {
+    padding: 9px;
+  }
+
+  .memory-card img {
+    height: 150px;
+  }
+
+  .memory-card .sticky-note {
+    padding: 13px;
+  }
+}
