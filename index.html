@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#171513">
   <title>Roselyne & Fred | 12 December 2026</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header class="topbar"><a class="monogram" href="#home">R <span>&</span> F</a><a href="#details">THE WEDDING</a></header>
@@ -19,16 +19,17 @@
       <a class="outline-button" href="#details">EXPLORE OUR INVITATION</a>
     </section>
 
-    <section class="countdown section">
-      <p class="eyebrow">THE COUNTDOWN TO FOREVER</p>
-      <h2>Until we say “I do”</h2>
-      <div class="timer" aria-live="polite">
-        <div><strong id="days">--</strong><small>DAYS</small></div>
-        <div><strong id="hours">--</strong><small>HOURS</small></div>
-        <div><strong id="minutes">--</strong><small>MINUTES</small></div>
-        <div><strong id="seconds">--</strong><small>SECONDS</small></div>
-      </div>
-    </section>
+ <section class="countdown section">
+  <p class="eyebrow">THE COUNTDOWN TO FOREVER</p>
+  <h2>Until we say “I do”</h2>
+
+  <div class="timer" aria-live="polite">
+    <div><strong id="days">--</strong><small>DAYS</small></div>
+    <div><strong id="hours">--</strong><small>HOURS</small></div>
+    <div><strong id="minutes">--</strong><small>MINUTES</small></div>
+    <div><strong id="seconds">--</strong><small>SECONDS</small></div>
+  </div>
+</section>
 
     <section class="story section">
       <div class="story-copy">
@@ -69,54 +70,41 @@
 
     </section>
 
-   <section class="guestbook section" id="guestbook">
-  <p class="eyebrow">A NOTE FOR THE COUPLE</p>
-  <h2>Leave us a blessing</h2>
-  <p>Share a prayer, Bible verse, piece of advice or a heartfelt message for Roselyne and Fred.</p>
-
-  <form id="guestbookForm">
-    <input type="text" id="guestName" placeholder="Your name" required>
-
-    <select id="guestRelationship" required>
-      <option value="">How do you know the couple?</option>
-      <option value="Family">Family</option>
-      <option value="Friend">Friend</option>
-      <option value="Colleague">Colleague</option>
-      <option value="Church family">Church family</option>
-      <option value="Other">Other</option>
-    </select>
-
-    <textarea id="guestMessage" placeholder="Write your blessing or message..." required></textarea>
-
-    <button type="submit">Leave your blessing</button>
-  </form>
-
-  <p id="guestbookStatus"></p>
-
-  <div class="sticky-notes" id="guestbookMessages">
-  <p class="empty-message">Your blessings will appear here. 💌</p>
-</div>
-</section>
-
-    
+   
 <section class="wall section" id="wall">
   <p class="eyebrow">THE DAY THROUGH YOUR EYES</p>
   <h2>Make Our Wall Beautiful</h2>
   <p>Pin your photos and leave us a note. Every memory makes our day more special.</p>
 
   <form id="wallForm" class="wall-form">
-    <label for="wallGuestName">Your name</label>
-    <input type="text" id="wallGuestName" placeholder="Enter your name" maxlength="80" required>
+    <div class="wall-field">
+      <label for="wallGuestName">Your name</label>
+      <input type="text" id="wallGuestName" placeholder="Enter your name" maxlength="80" required>
+    </div>
 
-    <label for="wallRelationship">How do you know us?</label>
-    <input type="text" id="wallRelationship" placeholder="Friend, family, colleague...">
+    <div class="wall-field">
+      <label for="wallRelationship">How do you know us?</label>
+      <select id="wallRelationship">
+        <option value="">Choose one</option>
+        <option value="Family">Family</option>
+        <option value="Friend">Friend</option>
+        <option value="Colleague">Colleague</option>
+        <option value="Church family">Church family</option>
+        <option value="Other">Other</option>
+      </select>
+    </div>
 
-    <label for="wallPhotos">Pin your photos</label>
-    <input type="file" id="wallPhotos" accept="image/*" multiple>
+    <div class="wall-field">
+      <label for="wallPhotos">Pin your photos</label>
+      <input type="file" id="wallPhotos" accept="image/*" multiple>
+      <small>You can select up to 10 photos, 5 MB each.</small>
+    </div>
 
-    <label for="wallMessage">Write us a sticky note</label>
-    <textarea id="wallMessage" maxlength="150" placeholder="Leave us a blessing or a special message..." rows="4"></textarea>
-    <small><span id="wallCharCount">0</span>/150</small>
+    <div class="wall-field">
+      <label for="wallMessage">Write us a sticky note</label>
+      <textarea id="wallMessage" maxlength="150" placeholder="Leave us a blessing or a special message..." rows="4"></textarea>
+      <small><span id="wallCharCount">0</span>/150</small>
+    </div>
 
     <button type="submit">Share Your Memories ❤️</button>
     <p id="wallStatus" aria-live="polite"></p>
@@ -126,21 +114,20 @@
     <p>Our beautiful memories will appear here...</p>
   </div>
 </section>
-
-
-  <section class="gallery section" id="gallery">
+<section class="gallery section" id="gallery">
   <p class="eyebrow">OUR FAVOURITE MOMENTS</p>
   <h2>A little more of our story</h2>
   <p>Some beautiful moments along our journey to forever.</p>
 
   <div class="gallery-grid">
-   <img src="assets/CPL1441-Edit.jpg" alt="Roselyne and Fred">
-   <img src="assets/CPL1446-Edit-2.jpg" alt="Roselyne and Fred">
-   <img src="assets/CPL1449-Edit.jpg" alt="Roselyne and Fred">
+    <img src="assets/CPL1441-Edit.jpg" alt="Roselyne and Fred">
+    <img src="assets/CPL1446-Edit-2.jpg" alt="Roselyne and Fred">
+    <img src="assets/CPL1449-Edit.jpg" alt="Roselyne and Fred">
   </div>
-</section>  <footer><div class="monogram">R <span>&</span> F</div><h2>With love, Roselyne & Fred</h2><p>12 December 2026 · Nairobi, Kenya</p><small>Made with love</small></footer>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
-  <script src="script.js"></script>
+</section>
+    </main>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="script.js"></script>
 </body>
 </html>
