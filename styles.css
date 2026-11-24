@@ -263,3 +263,76 @@
     padding: 13px;
   }
 }
+
+/* MEMORY WALL ALIGNMENT FIX */
+
+#wall {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#wall .wall-form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  width: min(100% - 32px, 600px);
+  margin: 30px auto;
+  padding: 28px;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+#wall .wall-form label {
+  display: block;
+  width: 100%;
+  margin: 12px 0 2px;
+  line-height: 1.5;
+  text-align: left;
+}
+
+#wall .wall-form input,
+#wall .wall-form textarea {
+  display: block;
+  width: 100%;
+  min-height: 46px;
+  margin: 0;
+  padding: 12px 14px;
+  box-sizing: border-box;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+#wall .wall-form input[type="file"] {
+  min-height: auto;
+  padding: 12px;
+}
+
+#wall .wall-form textarea {
+  min-height: 110px;
+}
+
+#wall .wall-form button {
+  display: block;
+  width: 100%;
+  margin: 18px 0 0;
+  padding: 15px;
+}
+
+#wall #wallStatus {
+  width: 100%;
+  text-align: center;
+}
+
+#wall .memory-wall {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (max-width: 600px) {
+  #wall .wall-form {
+    width: calc(100% - 24px);
+    padding: 20px;
+  }
+}
