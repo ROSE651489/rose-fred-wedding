@@ -1,3 +1,11 @@
+const SUPABASE_URL = "https://iplqdcnbvwhyitruzmpu.supabase.co";
+const SUPABASE_KEY = "sb_publishable_cs-rXtXGOFOoPrIyc2MiRQ_p_hzHiqv";
+
+const supabaseClient = window.supabase.createClient(
+  SUPABASE_URL,
+  SUPABASE_KEY
+);
+
 // WEDDING COUNTDOWN
 const weddingDate = new Date("2026-12-12T10:00:00+03:00").getTime();
 
